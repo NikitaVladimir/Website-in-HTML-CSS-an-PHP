@@ -1,0 +1,143 @@
+
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  min-height:100vh; /*height of this element is equal to 100% of the viewport height*/
+  width: 100%;
+  background-image: linear-gradient(rgba(3,4,10,0.5), rgba(3,4,10,0.7)), url(images/pancakes-with-berries-and-bananas.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+nav{
+  display: flex;
+  padding: 5px 18%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F9f1f0;
+  margin: auto;
+}
+
+nav img{
+  width: 120px;
+}
+
+.subtitle{
+  padding-left: 22px;
+  color: #F9f1f0;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #391306;
+}
+
+.nav-links ul li::after{
+  content: '';
+  background-color: pink;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.phone-number{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.phone-number a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #AA1945;
+  border: 2px solid #AA1945;
+  border-radius: 20px;
+  padding: 4px 10px;
+  margin-left: 20px;
+}
+
+.phone-number a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  background-color: pink;
+  color: white;
+  border: 2px solid pink;
+  border-radius: 20px;
+  padding: 4px 10px;
+  margin-left: 20px;
+  transition: 0.2s;
+}
+
+
+
+/*@media only screen and (max-width: 1230px){
+
+
+  nav img{
+    width: 80px;
+  }
+
+  nav{
+    display: flex;
+    padding: 1% 15%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(249,241,240, 0.8);
+    margin: auto;
+  }
+
+  .subtitle{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .nav-links ul li a{
+    color: #3B0404;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  */
